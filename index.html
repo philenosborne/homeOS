@@ -1,9 +1,31 @@
-<HTML>
+<!doctype HTML>
+<HTML lang="sv">
   <HEAD>
+    <META charset="utf-8" />
+    <META name="viewport" content="width=device-width,initial-scale=1"/>
     <TITLE>homeOS</TITLE>
-    <link href="style.css" rel="stylesheet" />
+    <LINK href="style.css" rel="stylesheet"/>
+    <SCRIPT src="https://cdn.jsdelivr.net/npm/@azure/msal-browser@3/dist/msal-browser.min.js"></SCRIPT>
   </HEAD>
   <BODY>
-    ...under way...
+  <DIV class="wrap">
+  <H2>HomeOS</H2>
+  <P id="status">Inte inloggad.</p>
+
+  <DIV class="row">
+  <BUTTON id="btnLogin">Logga in med Microsoft-konto</BUTTON>
+  <BUTTON id="btnLogout" disabled>Logga ut</BUTTON>
+  </DIV>
+
+  <HR/>
+
+  <DIV class="row">
+  <BUTTON id="btnLoad" disabled>Läs money.csv från OneDrive</BUTTON>
+  </DIV>
+  
+  <PRE id="out"></PRE>
+  </DIV>
+
+  <SCRIPT src="app.js></SCRIPT>
   </BODY>
 </HTML>
