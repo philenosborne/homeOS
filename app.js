@@ -1,12 +1,12 @@
 const clientId = "bff0d77c-cb49-44ed-8b5f-ce68d08d3c8d";
 
-const redirectUri = "https://philenosborne.github.io/homeOS";
+const redirectUri = "https://philenosborne.github.io/homeOS/";
 
 // konfa MSAL
 const msalConfig = {
   auth: {
     clientId,
-    authority: "https://login.microsoftonline.com/consumers",
+    authority: "https://login.microsoftonline.com/common",
     redirectUri,
   },
   cache: {
