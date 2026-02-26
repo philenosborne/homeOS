@@ -15,6 +15,8 @@ const msalConfig = {
   },
 };
 
+await msalInstance.Initialize();
+
 const msalInstance = new msal.PublicClientApplication(msalConfig);
 
 const statusEl = document.getElementById("status");

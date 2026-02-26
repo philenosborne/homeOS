@@ -4,28 +4,31 @@
     <META charset="utf-8" />
     <META name="viewport" content="width=device-width,initial-scale=1"/>
     <TITLE>homeOS</TITLE>
-    <LINK href="style.css" rel="stylesheet"/>
+    <LINK rel ="stylesheet" href="./style.css" />
     <SCRIPT src="https://cdn.jsdelivr.net/npm/@azure/msal-browser@3/dist/msal-browser.min.js"></SCRIPT>
   </HEAD>
   <BODY>
-  <DIV class="wrap">
-  <H2>HomeOS</H2>
-  <P id="status">Inte inloggad.</p>
+    <DIV class="wrap">
+      <H2>HomeOS</H2>
+      
+      <div id="status">Laddar...</div>
 
-  <DIV class="row">
-  <BUTTON id="btnLogin">Logga in med Microsoft-konto</BUTTON>
-  <BUTTON id="btnLogout" disabled>Logga ut</BUTTON>
-  </DIV>
+      <DIV class="row">
+       <BUTTON id="btnLogin">Logga in med Microsoft-konto</BUTTON>
+       <BUTTON id="btnLogout" disabled>Logga ut</BUTTON>
+      </DIV>
 
-  <HR/>
+      <HR/>
 
-  <DIV class="row">
-  <BUTTON id="btnLoad" disabled>Läs money.csv från OneDrive</BUTTON>
-  </DIV>
+      <DIV class="row">
+        <BUTTON id="btnLoad" disabled>Läs money.csv från OneDrive</BUTTON>
+      </DIV>
   
-  <PRE id="out"></PRE>
+    <PRE id="out"></PRE>
   </DIV>
 
-  <SCRIPT src="app.js></SCRIPT>
+  <SCRIPT src="https://cdn.jsdelivr.net/npm/@azure/msal-browser@3/dist/msal-browser.min.js"></SCRIPT>
+
+  <SCRIPT src="./app.js"></SCRIPT>
   </BODY>
 </HTML>
